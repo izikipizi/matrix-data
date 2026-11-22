@@ -4,7 +4,7 @@ type: rmm
 ## Nizlo
 - id: nizlo_rmm
 - website: https://nizlo.com/
-- last_updated_date: 11/20/2026
+- last_updated_date: 11/21/2026
 - defaultVisible: false
 
 ### Features
@@ -38,7 +38,7 @@ type: rmm
 
 - powershell: true
 - bash: Limited
-  > The Linux x64 and ARM64 monitoring preview supports reviewed Bash jobs; Windows PowerShell and CMD remain the primary remote job paths.
+  > The Ubuntu 24.04 LTS x64/ARM64 agent supports monitoring, health, inventory, service controls, reviewed Bash jobs, and permission-gated terminal access. Linux remote desktop, patch management, and backup are not currently available; Windows PowerShell and CMD remain the primary remote job paths.
 - python: false
 - script_library: true
 - script_scheduling: true
