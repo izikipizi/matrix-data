@@ -142,6 +142,7 @@ type: rmm
   > Core and Scale include unlimited RMM endpoints; backup endpoints have separate allowances and pricing.
 - per_user: false
 - per_technician: true
+  > Core is $59/month per workspace and Scale is $79/month per workspace. Both include one technician and unlimited RMM endpoints. Additional technicians are $10/month each. Source: https://nizlo.com/pricing (checked November 25, 2026).
 - tiered_pricing: true
 - all_inclusive: false
 - free_trial: true
