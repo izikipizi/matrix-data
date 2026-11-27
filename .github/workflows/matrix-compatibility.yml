@@ -44,10 +44,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-      
-      - name: Install dependencies
-        run: npm ci
       
       - name: Verify matrix data is available
         run: |
@@ -140,7 +136,7 @@ jobs:
           FULL_SCAN: ${{ steps.changed-files.outputs.full_scan }}
       
       - name: Comment PR with results
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         uses: actions/github-script@v7
         with:
           script: |
